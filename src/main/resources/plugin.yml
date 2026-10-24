@@ -1,0 +1,25 @@
+name: RoleplayJobs
+version: '${project.version}'
+main: id.roleplay.jobs.RoleplayJobs
+api-version: '1.21'
+depend: [Vault]
+description: Paket job roleplay (Kurir, Kasir, dll)
+
+commands:
+  job:
+    description: Pilih / keluar / lihat job
+    usage: /job <join|leave|info|list>
+  kurir:
+    description: Perintah job Kurir Paket
+    usage: /kurir <ambil|batal>
+  kasir:
+    description: Perintah job Kasir
+    usage: /kasir <duty|tagih|bayar|tolak>
+  rpjobs:
+    description: Admin RoleplayJobs
+    usage: /rpjobs <setdelivery|deldelivery|setkasir|delkasir|list|reload>
+    permission: rpjobs.admin
+
+permissions:
+  rpjobs.admin:
+    default: op

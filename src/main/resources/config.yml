@@ -1,0 +1,18 @@
+# Prefix pesan (format MiniMessage)
+prefix: "<gray>[<gold>Job</gold>]</gray> "
+
+courier:
+  pay-base: 150.0          # gaji dasar tiap paket
+  pay-per-block: 1.5       # tambahan per blok jarak dari titik ambil ke tujuan
+  max-time-seconds: 300    # kirim lebih cepat dari ini = dapat bonus
+  time-bonus: 50.0
+  delivery-radius: 3.0     # jarak (blok) ke titik tujuan agar dianggap sampai
+
+cashier:
+  salary-per-transaction: 25.0   # gaji tetap kasir tiap transaksi sukses (dari server)
+  commission-percent: 10.0       # komisi kasir dari total transaksi (dari server)
+  register-radius: 5.0           # kasir harus dekat mesin kasir (/rpjobs setkasir)
+  require-register: true         # kalau belum ada mesin kasir yang diset, aturan ini diabaikan
+  customer-max-distance: 8.0     # jarak maksimal pelanggan dari kasir
+  max-invoice: 100000.0
+  invoice-expire-seconds: 60
